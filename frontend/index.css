@@ -1,0 +1,103 @@
+
+html {
+	width: 100%;
+	height: 100%;
+}
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	background-color: #393E46;
+}
+
+a {
+	padding: 10px;
+	background-color: orange;
+	color: white;
+	text-decoration: none;
+}
+
+form {
+	/*display: none;	*/
+}
+
+title {
+	font-size: 64px;
+}
+
+#cabecera {
+	background-color: #222831;
+	font-size: 32px;
+	color: #EEEEEE;
+	width: 100%;
+	padding: 50px 0;
+	text-align: center;
+	line-height: 15%;
+}
+
+@keyframes animacionRespuesta {
+	from {opacity: 0; top: -500px;}
+	to {opacity: 1; top: 0; bottom: 0;}
+	
+}
+
+#respuesta {
+	display: none;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	margin: auto;
+	height: fit-content;
+	z-index: 1;
+	background-color: #00ADB5;
+	color: #EEEEEE;
+	padding: 125px 200px;
+	width: fit-content;
+	border-radius: 15px;
+	font-size: 32px;
+
+	/*opacity: 0.9;*/
+
+}
+
+#respuesta #cruz{
+	color: #EEEEEE;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+video {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	
+}
+
+canvas {
+	display: none;
+}
+
+#botonFoto{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	color: #EEEEEE;
+	background-color: #00ADB5;
+	border: none;
+	text-align: center;
+	padding: 10px 10px;
+	text-decoration: none;
+	font-size: 20px;
+	border-radius: 10px;
+}
+
+img {
+	z-index: 3;
+	width: 1000px;
+	height: 100%;
+}

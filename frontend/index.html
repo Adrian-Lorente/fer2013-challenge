@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reconocimiento de expresión facial</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script type="text/javascript" src="https://unpkg.com/webcam-easy@1.1.1/dist/webcam-easy.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="./index.css"/>
+</head>
+
+<body>
+    <div>
+        <div id="cabecera">Reconocimiento de expresión facial</div>
+        <video id="webCam" autoplay playsinlne width="480" height="480"></video>
+        <canvas id="canvas"></canvas>
+		
+		<button id="botonFoto" type="button" onclick="startPictureProcess()">Tomar foto</button>
+        <div id="respuesta" class="respuesta">
+            Tu emoción es:  <span id="respuesta-texto"></span>
+            <div id="cruz" onclick="cerrarRespuesta()"><i class="material-icons w3-xxxlarge">close</i></div>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
